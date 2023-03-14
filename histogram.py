@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Results of stress test
+# for instances [1,2,4,8]
 results = [920, 950, 1000, 1140]
 
 # Create histogram
