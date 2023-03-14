@@ -1,0 +1,15 @@
+[master]
+ec2-34-201-61-95.compute-1.amazonaws.com
+
+[worker]
+ec2-54-237-226-133.compute-1.amazonaws.com
+
+[cluster:children]
+master
+worker
+
+[cluster:vars]
+ansible_ssh_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/vockey2.pem
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
